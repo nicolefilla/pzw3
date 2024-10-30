@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brojač Klikova</title>
+</head>
+<body>
+
+    <h1>Brojač Klikova</h1>
+
+    <button id="buttonPlus">+</button>
+    <h3 id="counter">Broj klikova: 0</h3>
+    <button id="buttonMinus">-</button>
+
+    <script>
+        const buttonPlus = document.querySelector("#buttonPlus");
+        const buttonMinus = document.querySelector("#buttonMinus");
+        const counterDisplay = document.querySelector("#counter");
+
+        let count = 0; // Inicijalna vrijednost brojača
+
+        buttonPlus.onclick = () => {
+            count += 1; // Povećaj brojač
+            counterDisplay.textContent = `Broj klikova: ${count}`; // Ažuriraj prikaz
+        };
+
+        buttonMinus.onclick = () => {
+            count -= 1; // Smanji brojač
+            counterDisplay.textContent = `Broj klikova: ${count}`; // Ažuriraj prikaz
+        };
+    </script>
+</body>
+</html>
+
