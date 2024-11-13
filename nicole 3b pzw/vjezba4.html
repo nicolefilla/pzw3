@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+<body>
+
+    <h1>JavaScript DOM</h1>
+
+    <!-- Naslovi -->
+    <h2 id="n1">Naslov 1</h2> 
+    <h2 id="n2">Naslov 2</h2>
+    <h2 id="n3">Naslov 3</h2>
+
+    <!-- Slika koja će se menjati -->
+    <img id="myImage" src="heart.png" style="width:200px" alt="Heart Image">
+
+    <!-- Dugme za promenu slike na heart2.png -->
+    <button onclick="document.getElementById('myImage').src='heart2.png'">Like</button>
+
+    <!-- Dugme za promenu slike na heart.png -->
+    <button onclick="document.getElementById('myImage').src='heart.png'">Dislike</button>
+
+    <script>
+        // Promene stila za naslove
+        var naslov1 = document.getElementById("n1");
+        var naslov2 = document.getElementById("n2");
+        var naslov3 = document.getElementById("n3");
+
+        naslov1.style.color = "red";
+        naslov1.style.fontSize = "24px"; 
+
+        naslov2.style.color = "green";
+        naslov2.style.fontSize = "30px"; 
+
+        naslov3.style.color = "blue";
+        naslov3.style.fontSize = "36px"; 
+    </script>
+
+</body>
+</html>
